@@ -7,38 +7,26 @@
 -- import: ayushsoni1010.github.io/ui-packages/footer as footer
 -- import: ayushsoni1010.github.io/ui-packages/hero-toast as github-toast
 -- import: ayushsoni1010.github.io/ui-packages/button as button
-
+-- import: ayushsoni1010.me/assets
+-- import: ayushsoni1010.me/lib as lib
+-- import: ayushsoni1010.github.io/ui-packages/header as navbar
+-- import: ayushsoni1010.github.io/ui-packages/base-text as basetext
+-- import: ayushsoni1010.github.io/ui-packages/base-layout as layout
+-- import: ayushsoni1010.github.io/ui-packages/social-buttons as social
+-- import: ayushsoni1010.github.io/ui-packages/footer as footer
+-- import: ayushsoni1010.github.io/ui-packages/cta-roles as cta
 ;; --------------------------------------------------------------
 ;; --------------------------------------------------------------
 
 -- layout.base-layout:
 
 -- navbar.header:
-logo: $assets.files.images.logo.svg
+logo: $assets.files.images.react.svg
 logoURL: /
-header-item1: Home
-header-item2: About
-header-item3: Blogs
-header-item4: Tweets
-header-item5: Experience
-header-item6: Contact
-header-item1-link: /
-header-item2-link: /about
-header-item3-link: /blogs
-header-item4-link: /tweets
-header-item5-link: /experience
-header-item6-link: /contact
 cta-item1: Resume
-cta-item1-link: https://ayushsoni1010.com/resume
+cta-item1-link: 
 cta-item2: Schedule a Meeting
-cta-item2-link: https://calendly.com/ayushsoni1010
-
-;; --------------------------------------------------------------
-;; --------------------------------------------------------------
-
--- lib.toast:
-title: Hello, I'm a Full Stack Developer based in India
-link: https://ayushsoni1010.com/github
+cta-item2-link: 
 
 ;; --------------------------------------------------------------
 ;; --------------------------------------------------------------
@@ -47,12 +35,14 @@ link: https://ayushsoni1010.com/github
 margin-top.px: 60
 spacing.fixed.px: 14
 
+
 -- ftd.column:
 spacing.fixed.px: 20
+margin-left.rem : 10
 
 -- lib.hero-ui-base-text-wrapper:
 firstTitle: I'm
-secondTitle: Ayush Soni,
+secondTitle: Adam Pithenwala,
 
 -- lib.hero-ui-base-text-wrapper:
 firstTitle: full stack
@@ -60,9 +50,9 @@ secondTitle: developer
 
 -- lib.hero-ui-base-text-wrapper:
 firstTitle: and
-secondTitle: designer.
+secondTitle: programmer.
 
--- ftd.text: I design and create functional and beautiful applications with passion and a focus on user experience and high quality.
+-- ftd.text: I create functional and beautiful applications with passion and a focus on user experience and high quality.
 role: $lib.home-description-responsive-typography
 margin-top.px: 10
 width.fixed.px: 700
@@ -79,7 +69,7 @@ link: mailto:ayushsoni1010.work@gmail.com
 
 -- button.primary: 
 title: Schedule a Meeting
-link: https://calendly.com/ayushsoni1010/
+link: https://twitter.com/adampithenwala
 isNewTab: true
 
 -- end: ftd.row
@@ -126,12 +116,99 @@ image: $assets.files.images.mail.png
 -- end: ftd.column
 
 -- ftd.image: 
-src: $assets.files.images.dog.png
+src: $assets.files.images.dog.jpg
+margin-left.rem: 8
+margin-bottom.rem: 8
 
 -- end: ftd.row
 
 ;; --------------------------------------------------------------
 ;; --------------------------------------------------------------
+;; --------------------------------------------------------------
+;; --------------------------------------------------------------
+
+-- ftd.text: About Me 👩🏼‍💻
+role: $lib.hero-product-service-responsive-typography
+text-align: center
+margin-left.rem: 9
+margin-right.rem: 9
+margin-bottom.rem: 2
+
+;; --------------------------------------------------------------
+;; --------------------------------------------------------------
+
+
+-- ftd.row:
+spacing.fixed.px: 170
+margin-left.rem: 9
+margin-right.rem: 9
+
+-- ftd.image:
+width.fixed.px: 320
+src: https://avatars.githubusercontent.com/u/92779466?v=4
+margin-bottom.px: 80
+border-radius.px: 10
+
+
+-- ftd.column:
+spacing.fixed.px: 20
+
+-- ftd.text: 
+role: $lib.about-description-responsive-typography
+
+👨‍🎓This is  Adam Pithenwala, a Third year computer science undergraduate, pursuing B.Tech from Madhav Institute of Techonology & Science, Gwalior. I am always fascinated by programming and passionate about exploring the latest technology and developing new cool and innovative products. I am an enthusiastic and curious individual who works hard and is highly ambitious in improving my knowledge of real-world applications.
+
+-- ftd.text: 
+role: $lib.about-description-responsive-typography
+
+⚡I am a Full Stack Developer, an avid Open-Source Enthusiast, I enjoy building SaaS products and microservices applications while also creating feasible design systems. My deep understanding of frontend and backend application structure and architecture allows me to build robust and scalable products using core principles. By leveraging design principles, I can deliver engaging and intuitive designs that provide seamless user experiences.
+
+-- ftd.text: 
+role: $lib.about-description-responsive-typography
+
+🎯In terms of technical skills, I work with Javascript and Typescript on a daily basis, both professionally and on personal projects. I have actively participated in various hackathons and open-source contribution programs as both a participant and mentor, and I have taken sessions in the community to help with community building, team leadership, and different methodologies in developing software.
+
+;; --------------------------------------------------------------
+;; --------------------------------------------------------------
+
+;; ********** Social buttons wrapper **********
+
+-- ftd.row:
+spacing.fixed.px: 10
+
+-- social.social-button-wrapper:
+link: https://linkedin.com/in/ayushsoni1010
+image: $assets.files.images.linkedin.png
+
+-- social.social-button-wrapper:
+link: https://twitter.com/ayushsoni1010
+image: $assets.files.images.twitter.png
+
+-- social.social-button-wrapper:
+link: https://github.com/ayushsoni1010
+image: $assets.files.images.github.png
+
+-- social.social-button-wrapper:
+link: https://instagram.com/aayushsoni1010
+image: $assets.files.images.instagram.png
+
+-- social.social-button-wrapper:
+link: https://youtube.com/@ayushsoni1010
+image: $assets.files.images.youtube.png
+
+-- social.social-button-wrapper:
+link: mailto:ayushsoni1010.work@gmail.com
+image: $assets.files.images.mail.png
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+;; --------------------------------------------------------------
+;; --------------------------------------------------------------
+
 
 -- ftd.column:
 margin-top.px: 120
@@ -194,15 +271,15 @@ bgColor: #38B2AC
 
 -- ftd.column:
 margin-top.px: 120
+margin-left.rem: 8
+margin-right.rem: 8
 
 -- ftd.row:
 margin-top.px: 50
 
--- text.base-text:
-heading: Skills
-description: Programming
-imageURL: https://ik.imagekit.io/ayushsoni1010/Website/skills?updatedAt=1669666366824
-positionTop: -30
+-- ftd.text: Skills Programming 👽
+role: $lib.hero-product-service-responsive-typography
+text-align: center
 
 -- end: ftd.row
 
@@ -212,6 +289,7 @@ padding-horizontal.px: 50
 shadow: $lib.shadow
 background.solid: white
 border-radius.px: 20
+width.fixed.percent: 100
 
 -- ftd.column:
 spacing.fixed.px: 50
@@ -423,7 +501,7 @@ bgColor: #4299E1
 ;; ********** Footer **********
 
 -- footer.footer:
-title: Ayush Soni | ©2023
+title: Adam Pithenwala | ©2023
 link: /
 
 -- footer.footer.social-buttons:
